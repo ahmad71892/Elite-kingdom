@@ -2,10 +2,35 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#090a10">
-  <meta name="description" content="موقع مملكة إيليت الرسمي — التاريخ، القيادة، الإمارات، الدوقات، النقابات والإنجازات.">
-  <title>مملكة إيليت | من رحم التاريخ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08090e">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="مملكة إيليت">
+  <meta name="description" content="الموقع الرسمي لمملكة إيليت: اكتشف تاريخ المملكة، القيادة العليا، الإمارات، الدوقات، الأمراء، النقابات والأدميرالات وسجل الإنجازات.">
+  <meta name="keywords" content="مملكة إيليت, Elite Kingdom, القيادة العليا, النقابات, الأدميرالات, الدوقات, الإمارات, تاريخ إيليت">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:site_name" content="مملكة إيليت | Elite Kingdom">
+  <meta property="og:title" content="مملكة إيليت — من رحم التاريخ">
+  <meta property="og:description" content="بوابة إيليت الرسمية: التاريخ والقيادة والإمارات والنقابات وسجل الإنجازات.">
+  <meta property="og:image" content="https://i.ibb.co/jvSTbbbW/16157.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مملكة إيليت — من رحم التاريخ">
+  <meta name="twitter:description" content="اكتشف عالم مملكة إيليت وقيادتها ونقاباتها وإنجازاتها.">
+  <meta name="twitter:image" content="https://i.ibb.co/jvSTbbbW/16157.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23080910'/%3E%3Cpath d='M11 45 17 18 29 34 32 12 39 34 51 18 53 45Z' fill='%23f4df9a' stroke='%23d8b66a' stroke-width='2'/%3E%3C/svg%3E">
+  <title>مملكة إيليت | Elite Kingdom — من رحم التاريخ</title>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"مملكة إيليت | Elite Kingdom",
+    "inLanguage":"ar",
+    "description":"البوابة الرسمية لمملكة إيليت: تاريخ المملكة وقيادتها والإمارات والنقابات والإنجازات."
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
@@ -80,6 +105,9 @@
     .mini-card{border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.025);border-radius:13px;padding:15px}
     .mini-card strong{display:block;color:#f1dfad;font-size:16px}
     .mini-card span{font-size:12px;color:var(--muted)}
+    .emirate-card{position:relative;isolation:isolate;overflow:hidden;min-height:142px;display:flex;flex-direction:column;justify-content:center;gap:7px;background-size:cover!important;background-position:center 30%!important;border-color:rgba(216,182,106,.42);transition:border-color .25s,transform .25s,box-shadow .25s}
+    .emirate-card:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(7,8,13,.96) 0%,rgba(7,8,13,.72) 52%,rgba(7,8,13,.4) 100%),linear-gradient(0deg,rgba(7,8,13,.78),transparent 75%)}
+    .emirate-card strong,.emirate-card span,.emirate-card .profile-hint{position:relative;z-index:1}.emirate-card strong{font-size:20px;text-shadow:0 2px 12px #000}.emirate-card span{color:#eee8d9}.emirate-card:hover{transform:translateY(-2px);border-color:var(--gold2);box-shadow:0 12px 28px rgba(0,0,0,.28)}
     .guild-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
     .search{flex:1;min-width:220px;background:#0b0c13;border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:var(--text);outline:none}
     .search:focus,input:focus,textarea:focus{border-color:var(--gold)}
@@ -174,6 +202,27 @@
     .carousel-caption{text-align:center;color:var(--muted);font-size:11px;margin:12px 0 0}
     @media(max-width:600px){.modal-guilds{grid-template-columns:1fr}.profile-modal{padding:17px}}
 
+    /* نواب اللورد: نفس لغة بطاقات الدوقات، مع ثلاثة معارض مستقلة وخفيفة */
+    .deputies-panel{margin-top:22px}.deputy-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+    .deputy-group{min-width:0;padding:14px;border:1px solid rgba(216,182,106,.22);border-radius:18px;background:linear-gradient(155deg,rgba(24,25,38,.94),rgba(10,11,17,.97));box-shadow:0 12px 30px rgba(0,0,0,.2)}
+    .deputy-group-heading{display:flex;align-items:center;gap:10px;min-height:56px;margin-bottom:12px}.deputy-emblem{width:44px;height:44px;flex:0 0 44px;display:grid;place-items:center;border:1px solid rgba(216,182,106,.38);border-radius:13px;background:radial-gradient(circle at 30% 20%,rgba(216,182,106,.2),transparent 70%),#10111a;font-size:24px}
+    .deputy-group-heading h3{margin:0;color:var(--gold2);font-family:'El Messiri',serif;font-size:18px;line-height:1.35}.deputy-group-heading p{margin:2px 0 0;color:var(--muted);font-size:9px;letter-spacing:1.3px;line-height:1.4}.deputy-count{margin-right:auto;align-self:flex-start;padding:4px 7px;border:1px solid rgba(216,182,106,.2);border-radius:99px;color:var(--gold2);font-size:9px;white-space:nowrap}
+    .deputy-carousel{padding:8px;border-radius:15px;box-shadow:none}.deputy-carousel .noble-slide{padding:4px 1px}.deputy-noble-card{width:100%;min-height:328px;border-radius:15px;text-align:right}.deputy-noble-card .noble-card-content{padding:20px 16px 15px}.deputy-noble-card .noble-card-content h4{font-size:27px}.deputy-noble-card .noble-rank{font-size:10px;padding:3px 9px}.deputy-noble-card .noble-role{font-size:12px}.deputy-noble-card .noble-sector{font-size:11px}.deputy-art{position:absolute;inset:0;z-index:-2;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 30%,color-mix(in srgb,var(--deputy-glow) 45%,transparent),transparent 48%),linear-gradient(150deg,#1a1b2a,#08090e 83%)}
+    .deputy-art:before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;border:1px solid color-mix(in srgb,var(--deputy-glow) 70%,transparent);box-shadow:0 0 50px color-mix(in srgb,var(--deputy-glow) 24%,transparent),inset 0 0 32px color-mix(in srgb,var(--deputy-glow) 15%,transparent)}
+    .deputy-art span{font-size:clamp(78px,7vw,112px);filter:drop-shadow(0 10px 24px color-mix(in srgb,var(--deputy-glow) 50%,transparent));transform:translateY(-20px)}
+    .deputy-art .deputy-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;opacity:.88;filter:saturate(1.08) contrast(1.04);transition:transform .7s,opacity .3s}
+    .deputy-noble-card:hover .deputy-portrait{transform:scale(1.045);opacity:.96}.deputy-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,8,13,.06) 15%,rgba(7,8,13,.2) 42%,rgba(7,8,13,.94) 100%);pointer-events:none}
+    .deputy-art span{position:relative;z-index:1;text-shadow:0 2px 20px #000;opacity:.82}
+    .deputy-art:has(.deputy-portrait:not([style*="display: none"])) span{opacity:.15}
+    @supports not selector(:has(*)){.deputy-art .deputy-portrait:not([style*="display: none"])+span{opacity:.15}}
+    .deputy-carousel .carousel-controls{gap:10px;margin-top:12px}.deputy-carousel .carousel-arrow{width:34px;height:34px;font-size:17px}.deputy-carousel .carousel-caption{font-size:10px;margin:8px 0 2px}
+    #profileBio{white-space:pre-line}.modal-section[hidden]{display:none!important}
+    @media(max-width:1060px){.deputy-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.deputy-group:last-child{grid-column:1/-1}.deputy-group:last-child .noble-card{width:min(100%,420px)}}
+    @media(max-width:700px){.deputy-groups{grid-template-columns:1fr}.deputy-group:last-child{grid-column:auto}.deputy-group:last-child .noble-card{width:100%}.deputy-group{padding:11px}.deputy-noble-card{min-height:300px}.deputy-art span{font-size:88px}}
+    @media(prefers-reduced-motion:reduce){.deputy-noble-card,.deputy-art span{transition:none!important;transform:none!important}}
+    @media(max-width:700px){.anime-portrait{display:none!important}.anime-ambience:before,.anime-ambience:after,main>section:not(.hero):before,.hero:before,.hero:after{animation:none!important}.panel,.stat,.noble-carousel{box-shadow:0 8px 22px rgba(0,0,0,.22)}.modal-overlay{backdrop-filter:none}}
+
+
     @media(max-width:900px){
       .nav-links{display:none;position:absolute;top:76px;right:4%;left:4%;padding:18px;background:#10121b;border:1px solid var(--line);border-radius:14px;flex-direction:column;align-items:stretch}
       .nav-links.open{display:flex}.nav-toggle{display:block}
@@ -192,17 +241,83 @@
       .quran{padding:14px}.motto{font-size:14px}
       .developer-float{left:10px;bottom:10px;padding:8px 11px}.admin-open{right:10px;bottom:10px;padding:8px 11px}
     }
+
+    /* ===== ELITE ANIME CINEMATIC WORLD ===== */
+    :root{--anime-crimson:#a21b3b;--anime-violet:#7254d8;--anime-cyan:#5ed8e8;--ember:#ffd889}
+    body{background:#05060b;isolation:isolate}
+    body:before{z-index:-3;background:radial-gradient(ellipse at 12% 10%,rgba(120,100,203,.2),transparent 36%),radial-gradient(ellipse at 88% 40%,rgba(167,43,72,.16),transparent 32%),radial-gradient(ellipse at 50% 90%,rgba(30,100,150,.10),transparent 40%),linear-gradient(180deg,#070811,#05060b 70%)}
+    .anime-ambience{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;contain:strict;background:linear-gradient(180deg,rgba(4,5,10,.14),rgba(4,5,10,.52))}
+    .anime-ambience:before,.anime-ambience:after{content:"";position:absolute;inset:-20%;pointer-events:none}
+    .anime-ambience:before{background:radial-gradient(ellipse at 15% 25%,rgba(104,75,222,.2),transparent 27%),radial-gradient(ellipse at 88% 35%,rgba(174,22,58,.18),transparent 30%),radial-gradient(ellipse at 52% 85%,rgba(26,141,179,.12),transparent 34%);animation:nebula-drift 22s ease-in-out infinite alternate}
+    .anime-ambience:after{background:linear-gradient(115deg,transparent 20%,rgba(255,218,137,.035) 48%,transparent 57%);background-size:220% 100%;animation:light-sweep 17s linear infinite}
+    .anime-portrait{position:absolute;width:clamp(180px,24vw,390px);height:clamp(300px,58vh,680px);object-fit:cover;object-position:center top;opacity:.115;filter:saturate(1.22) contrast(1.08);mix-blend-mode:screen;mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 68%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 14%,#000 68%,transparent 100%);will-change:transform;animation:portrait-float 25s ease-in-out infinite alternate}
+    .anime-portrait.p1{left:-5%;top:8%;transform:rotate(-7deg);animation-delay:-8s}.anime-portrait.p2{right:-7%;top:17%;transform:rotate(7deg);animation-delay:-14s}.anime-portrait.p3{left:7%;bottom:-25%;width:clamp(150px,19vw,310px);opacity:.07;animation-duration:31s;animation-delay:-4s}.anime-portrait.p4{right:12%;bottom:-28%;width:clamp(150px,20vw,330px);opacity:.07;animation-duration:29s;animation-delay:-17s}
+    .ember-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;opacity:.62}
+    header,.hero,.stats,main>section,footer{position:relative;isolation:isolate}header{z-index:50!important}.hero,.stats,main>section,footer{z-index:2}main>section:not(.hero){overflow:hidden}
+    main>section:not(.hero):before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:.15;transform:scale(1.035);animation:section-breathe 24s ease-in-out infinite alternate}
+    #history:before{background-image:linear-gradient(90deg,#070811 0%,rgba(7,8,17,.86) 48%,#070811 100%),url('https://i.ibb.co/jvSTbbbW/16157.jpg');background-position:center,80% 24%}
+    #leadership:before{background-image:linear-gradient(90deg,rgba(5,6,11,.92),rgba(5,6,11,.68),rgba(5,6,11,.92)),url('https://i.ibb.co/ZpS1Qtsw/16163.jpg');background-position:center,50% 20%;opacity:.2}
+    #regions:before{background-image:linear-gradient(90deg,rgba(5,6,11,.95),rgba(5,6,11,.72),rgba(5,6,11,.95)),url('https://i.ibb.co/W4qvFMd7/16165.jpg');background-position:center,70% 15%}
+    #guilds:before{background-image:linear-gradient(90deg,rgba(5,6,11,.95),rgba(5,6,11,.78),rgba(5,6,11,.95)),url('https://i.ibb.co/PGf3hV9S/16164.jpg');background-position:center,25% 20%}
+    #weekly:before{background-image:linear-gradient(90deg,rgba(5,6,11,.95),rgba(5,6,11,.75),rgba(5,6,11,.95)),url('https://i.ibb.co/Y7mQ4fss/16180.jpg');background-position:center,70% 20%}
+    #achievements:before{background-image:linear-gradient(90deg,rgba(5,6,11,.95),rgba(5,6,11,.75),rgba(5,6,11,.95)),url('https://i.ibb.co/dwzSgC4V/16173.jpg');background-position:center,70% 18%}
+    .hero{isolation:isolate;background:#070811}.hero:before{background:linear-gradient(90deg,rgba(5,6,12,.97) 0%,rgba(5,6,12,.78) 48%,rgba(5,6,12,.45) 100%),linear-gradient(0deg,#05060b 0%,transparent 45%),url('https://i.ibb.co/jvSTbbbW/16157.jpg') 78% 20%/cover,url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=2000&q=85') center/cover;opacity:1;animation:hero-pan 35s ease-in-out infinite alternate}
+    .hero:after{background:radial-gradient(ellipse at 78% 35%,rgba(216,182,106,.17),transparent 26%),radial-gradient(ellipse at 75% 55%,rgba(110,70,220,.13),transparent 38%),linear-gradient(115deg,transparent 25%,rgba(255,255,255,.035) 50%,transparent 75%);background-size:auto,auto,240% 100%;animation:hero-energy 12s ease-in-out infinite alternate}
+    .topbar{background:rgba(5,6,12,.76);border-bottom-color:rgba(216,182,106,.28);box-shadow:0 8px 35px rgba(0,0,0,.24)}.brand-mark{box-shadow:0 0 22px rgba(216,182,106,.15),inset 0 0 18px rgba(216,182,106,.15)}
+    .panel,.stat,.honor-card,.noble-carousel,.leader-card,.guild-card,.callout{backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}.panel{background:linear-gradient(145deg,rgba(17,19,30,.86),rgba(8,9,16,.88));box-shadow:0 18px 55px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.025)}
+    .leader-card{background:linear-gradient(145deg,rgba(26,20,38,.82),rgba(8,9,16,.91));transition:transform .35s,border-color .35s,box-shadow .35s}.leader-card:hover{transform:translateY(-7px);border-color:rgba(216,182,106,.7);box-shadow:0 20px 45px rgba(0,0,0,.4),0 0 30px rgba(112,78,210,.12)}.rank-photo{height:185px;object-position:center 20%;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+    .noble-carousel{background:radial-gradient(circle at 50% 0,rgba(216,182,106,.16),transparent 45%),radial-gradient(circle at 10% 100%,rgba(113,77,212,.13),transparent 45%),linear-gradient(145deg,rgba(20,17,31,.88),rgba(5,6,12,.91));box-shadow:0 25px 80px rgba(0,0,0,.42),inset 0 1px rgba(255,255,255,.05)}.noble-card{box-shadow:0 22px 60px rgba(0,0,0,.55),0 0 0 1px rgba(216,182,106,.06);transition:border-color .3s,box-shadow .3s}.noble-card:hover{border-color:rgba(244,223,154,.82);box-shadow:0 25px 70px rgba(0,0,0,.6),0 0 36px rgba(216,182,106,.12)}.noble-image{filter:saturate(1.12) contrast(1.05);transform:scale(1.015)}
+    .guild-card{background:linear-gradient(115deg,rgba(25,20,36,.78),rgba(8,9,16,.82));border-color:rgba(216,182,106,.13);transition:transform .28s,border-color .28s,background .28s,box-shadow .28s}.guild-card:hover{transform:translateY(-4px) scale(1.008);border-color:rgba(216,182,106,.62);background:linear-gradient(115deg,rgba(55,33,57,.78),rgba(12,14,24,.9));box-shadow:0 14px 35px rgba(0,0,0,.24)}.stat{background:linear-gradient(145deg,rgba(28,24,42,.88),rgba(7,8,15,.92));border-color:rgba(216,182,106,.3)}.honor-card{background:linear-gradient(145deg,rgba(26,21,39,.85),rgba(7,8,15,.9));transition:transform .3s,border-color .3s}.honor-card:hover{transform:translateY(-5px);border-color:rgba(216,182,106,.65)}.section-kicker{letter-spacing:3px;text-shadow:0 0 18px rgba(216,182,106,.2)}.gold{text-shadow:0 0 24px rgba(216,182,106,.15)}.btn,.carousel-arrow{box-shadow:0 8px 22px rgba(0,0,0,.16)}.developer-float{box-shadow:0 8px 28px rgba(0,0,0,.42),0 0 20px rgba(216,182,106,.12)}
+    @keyframes nebula-drift{0%{transform:translate3d(-1.5%,0,0) scale(1)}100%{transform:translate3d(1.5%,-2%,0) scale(1.08)}}@keyframes light-sweep{0%{background-position:180% 0}100%{background-position:-40% 0}}@keyframes portrait-float{0%{translate:0 -1.2%;rotate:-1deg}100%{translate:0 2.5%;rotate:1deg}}@keyframes section-breathe{0%{transform:scale(1.035) translate3d(-.3%,0,0)}100%{transform:scale(1.09) translate3d(.3%,-.5%,0)}}@keyframes hero-pan{0%{background-position:center,center,78% 20%,center}100%{background-position:center,center,72% 28%,center}}@keyframes hero-energy{0%{background-position:center,center,160% 0}100%{background-position:center,center,-20% 0}}
+    @media(max-width:700px){.anime-portrait{width:42vw;height:40vh;opacity:.075}.anime-portrait.p1{left:-18%;top:16%}.anime-portrait.p2{right:-18%;top:40%}.anime-portrait.p3,.anime-portrait.p4{opacity:.035}.ember-canvas{opacity:.4}main>section:not(.hero):before{opacity:.09}.hero:before{background:linear-gradient(90deg,rgba(5,6,12,.95),rgba(5,6,12,.77)),linear-gradient(0deg,#05060b 0%,transparent 45%),url('https://i.ibb.co/jvSTbbbW/16157.jpg') 70% 15%/cover}.rank-photo{height:210px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.ember-canvas{display:none}}
+
+    /* ELITE GLOBAL FINISH — usability, accessibility, mobile polish */
+    :root{scrollbar-color:rgba(216,182,106,.55) #08090e;scrollbar-width:thin}
+    ::selection{background:rgba(216,182,106,.34);color:#fff}
+    :focus-visible{outline:2px solid var(--gold2);outline-offset:4px}
+    .skip-link{position:fixed;top:10px;right:10px;z-index:1000;transform:translateY(-160%);padding:10px 16px;background:#f4df9a;color:#15120a;border-radius:10px;font-weight:900;transition:transform .2s}
+    .skip-link:focus{transform:translateY(0)}
+    .scroll-progress{position:fixed;inset:0 0 auto 0;height:3px;z-index:300;pointer-events:none;background:rgba(255,255,255,.035)}
+    .scroll-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#7864cb,#d8b66a,#fff0b4);box-shadow:0 0 16px rgba(216,182,106,.55);transform-origin:right center}
+    .back-to-top{position:fixed;right:21px;bottom:77px;z-index:79;width:42px;height:42px;display:grid;place-items:center;border-radius:14px;border:1px solid rgba(216,182,106,.42);background:rgba(12,13,21,.88);color:var(--gold2);font-size:23px;font-weight:900;box-shadow:0 8px 28px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s,transform .22s,visibility .22s;backdrop-filter:blur(10px)}
+    .back-to-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+    .topbar{padding-top:env(safe-area-inset-top,0px)}
+    .nav-links a{position:relative;padding-block:8px}
+    .nav-links a:after{content:"";position:absolute;right:0;bottom:2px;width:0;height:1px;background:var(--gold2);transition:width .25s}
+    .nav-links a:hover:after,.nav-links a:focus-visible:after{width:100%}
+    .section-head h2{letter-spacing:-.35px;text-wrap:balance}
+    .section-desc{line-height:1.9}
+    .btn,.carousel-arrow,.carousel-dot,.nav-toggle,.admin-open,.modal-close,.delete-btn{touch-action:manipulation}
+    .guild-card[hidden]{display:none!important}
+    .profile-modal{overscroll-behavior:contain;scrollbar-color:rgba(216,182,106,.42) #10121b;scrollbar-width:thin}
+    .noble-track{touch-action:pan-y pinch-zoom}
+    img{max-width:100%}
+    @media(min-width:1300px){.container{width:min(1240px,91%)}.hero{min-height:720px}.hero-content{max-width:870px}}
+    @media(max-width:900px){.nav-links{box-shadow:0 24px 60px rgba(0,0,0,.42)}.nav-links a{padding:8px 12px;border-radius:9px}.nav-links a:hover{background:rgba(216,182,106,.08)}}
+    @media(max-width:600px){.back-to-top{right:12px;bottom:69px;width:39px;height:39px}.hero-lead{line-height:1.9}.stats .stat{min-width:0}.footer-inner{align-items:flex-start}.profile-modal{max-height:calc(100dvh - 24px)}}
+    @media(hover:none){.leader-card:hover,.guild-card:hover,.honor-card:hover{transform:none}}
+
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#mainContent">تجاوز إلى المحتوى الرئيسي</a>
+  <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-label="التقدم في الصفحة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="scrollProgressFill"></span></div>
+  <div class="anime-ambience" aria-hidden="true">
+    <img class="anime-portrait p1" src="https://i.ibb.co/ZpS1Qtsw/16163.jpg" alt="" loading="eager" decoding="async">
+    <img class="anime-portrait p2" src="https://i.ibb.co/PGf3hV9S/16164.jpg" alt="" loading="eager" decoding="async">
+    <img class="anime-portrait p3" src="https://i.ibb.co/pvQmh6Rm/16169.jpg" alt="" loading="lazy" decoding="async">
+    <img class="anime-portrait p4" src="https://i.ibb.co/qLwswBbh/16170.jpg" alt="" loading="lazy" decoding="async">
+  </div>
+  <canvas class="ember-canvas" id="emberCanvas" aria-hidden="true"></canvas>
   <header class="topbar">
     <div class="container nav">
       <a class="brand" href="#home" aria-label="مملكة إيليت">
         <span class="brand-mark">إ</span>
         <span>مملكة إيليت<small>ELITE KINGDOM</small></span>
       </a>
-      <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">☰ القائمة</button>
-      <nav class="nav-links" id="navLinks">
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="فتح القائمة" aria-controls="navLinks" aria-expanded="false">☰ القائمة</button>
+      <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
         <a href="#history">تاريخ المملكة</a>
         <a href="#leadership">القيادة</a>
         <a href="#regions">الإمارات والدوقات</a>
@@ -213,7 +328,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="mainContent">
     <section class="hero" id="home">
       <div class="container hero-content">
         <span class="eyebrow">الصفحة الرسمية لمملكة إيليت</span>
@@ -234,7 +349,7 @@
 
     <div class="container stats" aria-label="إحصائيات المملكة">
       <div class="stat"><strong>09 / 09</strong><span>يوم تأسيس المملكة</span></div>
-      <div class="stat"><strong>26</strong><span>نقابة في سجل إيليت</span></div>
+      <div class="stat"><strong>27</strong><span>نقابة في سجل إيليت</span></div>
       <div class="stat"><strong>4</strong><span>أركان في القيادة العليا</span></div>
       <div class="stat"><strong>∞</strong><span>طموح لا يعرف الحدود</span></div>
     </div>
@@ -276,47 +391,68 @@
 
     <section id="regions">
       <div class="container">
-        <div class="section-head"><div><div class="section-kicker">DOMINIONS & NOBILITY</div><h2>الإمارات وطبقات <span class="gold">النبلاء</span></h2><p class="section-desc">التقسيمات الإدارية والأسماء التي تتولى مسؤولية الإمارات والدوقات والأمراء ونواب اللورد.</p></div></div>
+        <div class="section-head"><div><div class="section-kicker">DOMINIONS & NOBILITY</div><h2>الإمارات  <span class="gold"></span></h2><p class="section-desc">التقسيمات الإدارية  التي تتولى مسؤولية الإمارات والدوقات والأمراء ونواب اللورد.</p></div></div>
         <div class="two-col">
           <div class="panel">
-            <div class="subhead"><span>🏰</span><h3>الإمارات</h3></div>
+            <div class="subhead"><span>🏰</span><h3>إمارات المملكة</h3></div>
+            <p class="section-desc" style="margin-bottom:14px">تعرف على الإمارتين وامرائهن من هنا، دون تكرار قسم الأمراء.</p>
             <div class="mini-grid">
-              <button type="button" class="mini-card profile-card" data-profile="zofan"><strong>نيفريا ❄️</strong><span>أمير الإمارة: زوفان</span><div class="profile-hint">اضغط لعرض الملف ↗</div></button>
-              <button type="button" class="mini-card profile-card" data-profile="goku"><strong>الأكـاريـا 🌕</strong><span>أمير الإمارة: غوكو</span><div class="profile-hint">اضغط لعرض الملف ↗</div></button>
+              <button type="button" class="mini-card emirate-card profile-card" data-profile="zofan" style="background-image:url('https://i.ibb.co/SCCkKN5/16174.jpg')"><strong>نيفريا ❄️</strong><span>قائد الإمارة: زوفان</span><div class="profile-hint">اضغط لعرض الملف ↗</div></button>
+              <button type="button" class="mini-card emirate-card profile-card" data-profile="goku" style="background-image:url('https://i.ibb.co/Y7mQ4fss/16180.jpg')"><strong>هـوسـان 🍂<اط/strong><span>أمير مارة: غوكو</span><div class="profile-hint">اضغط لعرض الملف ↗</div></button>
             </div>
           </div>
           <div class="panel">
             <div class="subhead"><span>👑</span><h3>الدوقات</h3></div>
-            <p class="section-desc" style="margin-bottom:14px">مجلس الدوقات — اسحب يمينًا أو يسارًا للتنقل بين الدوقات، واضغط على البطاقة لعرض نقابات الدوق.</p>
-            <div class="noble-carousel" data-carousel="dukes" aria-label="معرض الدوقات القابل للسحب">
+            <p class="section-desc" style="margin-bottom:14px">اضغط على بطاقة الدوق لعرض النقابات التابعة له والأدميرالات، من .</p>
+            <div class="noble-carousel" data-carousel="dukes" aria-label="معرض الدوقات">
               <div class="noble-track">
-                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="aizen"><img class="noble-image" data-noble-image="aizen" alt="صورة الدوق أيزن" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوق الأول</span><h4>أيزن</h4><p class="noble-role">الدوق — قطاع 🌙 🍁 🐺 👑</p><p class="noble-sector"> النقابات: أيلا • فينلاند • ستارك • إينرا</p><span class="noble-tap">اضغط لفتح سجل النقابات والأدميرالات ↗</span></div></button></div>
-                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="nakime"><img class="noble-image" data-noble-image="nakime" alt="صورة الدوقة ناكيمي" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوقة الثانية</span><h4>ناكيمي</h4><p class="noble-role">الدوقة — قطاع 💮 🐉 ⛩️</p><p class="noble-sector"> النقابات: ثرونز • طوكيو</p><span class="noble-tap">اضغط لفتح سجل النقابات والأدميرالات ↗</span></div></button></div>
-                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="yuta"><img class="noble-image" data-noble-image="yuta" alt="صورة الدوق يوتا" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوق الثالث</span><h4>يوتا</h4><p class="noble-role">الدوق — قطاع ❄️ 🔥 🌑</p><p class="noble-sector"> النقابات: سنو • أزورا • شادو</p><span class="noble-tap">اضغط لفتح سجل النقابات والأدميرالات ↗</span></div></button></div>
+                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="aizen"><img class="noble-image" data-noble-image="aizen" alt="صورة الدوق أيزن" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوق الأول</span><h4>أيزن</h4><p class="noble-role">المسؤول عن النقابات</p><span class="noble-tap">اضغط لعرض النقابات المسؤول عنها ↗</span></div></button></div>
+                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="nakime"><img class="noble-image" data-noble-image="nakime" alt="صورة الدوقة ناكيمي" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوقة الثانية</span><h4>ناكيمي</h4><p class="noble-role">دوقة المملكة</p><span class="noble-tap">اضغط لعرض ملف الدوقة ↗</span></div></button></div>
+                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="yuta"><img class="noble-image" data-noble-image="yuta" alt="صورة الدوق يوتا" loading="lazy"><div class="noble-card-content"><span class="noble-rank">♛ الدوق الثالث</span><h4>يوتا</h4><p class="noble-role">دوق أزورا وشادو</p><span class="noble-tap">اضغط لعرض النقابات المسؤول عنها ↗</span></div></button></div>
               </div>
               <div class="carousel-controls"><button class="carousel-arrow" type="button" data-prev aria-label="الدوق السابق">›</button><div class="carousel-dots" data-dots></div><button class="carousel-arrow" type="button" data-next aria-label="الدوق التالي">‹</button></div>
-              <p class="carousel-caption">اسحب البطاقة للتنقل • اضغط على الصورة لعرض النقابات</p>
+              <p class="carousel-caption">اسحب للتنقل • اضغط على البطاقة لعرض التفاصيل</p>
             </div>
           </div>
-          <div class="panel">
-            <div class="subhead"><span>⚔️</span><h3>الأمراء</h3></div>
-            <p class="section-desc" style="margin-bottom:14px">قاعة الأمراء — تنقّل بالسحب بين أمراء الإمارات، واضغط على الصورة لاستعراض النقابات التابعة.</p>
-            <div class="noble-carousel" data-carousel="princes" aria-label="معرض الأمراء القابل للسحب">
-              <div class="noble-track">
-                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="zofan"><img class="noble-image" data-noble-image="zofan" alt="صورة الأمير زوفان" loading="lazy"><div class="noble-card-content"><span class="noble-rank">⚔️ أمير الإمارة</span><h4>زوفان</h4><p class="noble-role">أمير نيفريا ❄️</p><p class="noble-sector"> النقابات: دريفت • ثرونز • فينيكس • أيلا • طوكيو</p><span class="noble-tap">اضغط لفتح سجل النقابات والأدميرالات ↗</span></div></button></div>
-                <div class="noble-slide"><button type="button" class="noble-card profile-card" data-profile="goku"><img class="noble-image" data-noble-image="goku" alt="صورة الأمير غوكو" loading="lazy"><div class="noble-card-content"><span class="noble-rank">⚔️ أمير الإمارة</span><h4>غوكو</h4><p class="noble-role">أمير الأكـاريـا 🌕</p><p class="noble-sector"> النقابات: فورتكس • لونا • يوجين • كلارا • أكومو</p><span class="noble-tap">اضغط لفتح سجل النقابات والأدميرالات ↗</span></div></button></div>
+        </div>
+        <div class="panel deputies-panel">
+          <div class="subhead"><span>🛡️</span><h3>نواب اللورد</h3></div>
+          <p class="section-desc" style="margin-bottom:18px">كل قسم له معرض مستقل بنفس أسلوب الدوقات: اسحب بطاقات النواب، واضغط على أي بطاقة لفتح السيرة الذاتية.</p>
+          <div class="deputy-groups">
+            <section class="deputy-group" aria-labelledby="deputy-shira-title">
+              <div class="deputy-group-heading"><span class="deputy-emblem">🐉</span><div><h3 id="deputy-shira-title">قسم شيرا</h3><p>SHIRA DIVISION</p></div><span class="deputy-count">02 نواب</span></div>
+              <div class="noble-carousel deputy-carousel" data-carousel="deputy-shira" aria-label="معرض نواب قسم شيرا">
+                <div class="noble-track">
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="obito"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/WpxWnLmc/16674.jpg" alt="صورة obito" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">👁️‍🗨️</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>أوبيتو</h4><p class="noble-role">قسم شيرا 🐉</p><p class="noble-sector">عضو قيادة القسم ومتابعة شؤونه.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="sabo"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/rRVfcxLs/16675.jpg" alt="صورة sabo" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">🔥</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>سابو</h4><p class="noble-role">قسم شيرا 🐉</p><p class="noble-sector">يساند القسم في تنسيق المهام والمسؤوليات.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                </div>
+                <div class="carousel-controls"><button class="carousel-arrow" type="button" data-prev aria-label="النائب السابق">›</button><div class="carousel-dots" data-dots></div><button class="carousel-arrow" type="button" data-next aria-label="النائب التالي">‹</button></div>
+                <p class="carousel-caption">اسحب للتنقل بين نواب شيرا</p>
               </div>
-              <div class="carousel-controls"><button class="carousel-arrow" type="button" data-prev aria-label="الأمير السابق">›</button><div class="carousel-dots" data-dots></div><button class="carousel-arrow" type="button" data-next aria-label="الأمير التالي">‹</button></div>
-              <p class="carousel-caption">اسحب البطاقة للتنقل • اضغط على الصورة لعرض النقابات</p>
-            </div>
-          </div>
-          <div class="panel">
-            <div class="subhead"><span>🛡️</span><h3>نواب اللورد</h3></div>
-            <div class="mini-grid">
-              <div class="mini-card"><strong>أوبيتو 🐉 | سابو</strong><span>🍁╎⚫•🎋•⚡</span></div>
-              <div class="mini-card"><strong>روكيا 🪻 | إدوارد</strong><span>🔱╎🌪️•🔰</span></div>
-              <div class="mini-card"><strong>يوتا 🔥 | أورومـا</strong><span>⚜️╎🕷️</span></div>
-            </div>
+            </section>
+            <section class="deputy-group" aria-labelledby="deputy-shizora-title">
+              <div class="deputy-group-heading"><span class="deputy-emblem">🌑</span><div><h3 id="deputy-shizora-title">قسم شيزورا</h3><p>SHIZORA DIVISION</p></div><span class="deputy-count">03 نواب</span></div>
+              <div class="noble-carousel deputy-carousel" data-carousel="deputy-shizora" aria-label="معرض نواب قسم شيزورا">
+                <div class="noble-track">
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="rukia"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/Pv98H47c/16678.jpg" alt="صورة rukia" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">❄️</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>روكيا</h4><p class="noble-role">قسم شيزورا 🌑</p><p class="noble-sector">تشارك في متابعة شؤون القسم وتنظيم مهامه.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="edward"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://static.wikia.nocookie.net/fma/images/1/15/Edward_Full_Body.png/revision/latest?cb=20250220121735" alt="صورة edward" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">⚔️</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>إدوارد</h4><p class="noble-role">قسم شيزورا 🌑</p><p class="noble-sector">يسهم في تنسيق المسؤوليات ضمن القسم.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="sasuke"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/pr6RhzHx/16634.jpg" alt="صورة ساسكي" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">⚡</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>ساسكي</h4><p class="noble-role">قسم شيزورا 🌑</p><p class="noble-sector">نائب اللورد ضمن قيادة قسم شيزورا.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                </div>
+                <div class="carousel-controls"><button class="carousel-arrow" type="button" data-prev aria-label="النائب السابق">›</button><div class="carousel-dots" data-dots></div><button class="carousel-arrow" type="button" data-next aria-label="النائب التالي">‹</button></div>
+                <p class="carousel-caption">اسحب للتنقل بين نواب شيزورا</p>
+              </div>
+            </section>
+            <section class="deputy-group" aria-labelledby="deputy-lanster-title">
+              <div class="deputy-group-heading"><span class="deputy-emblem">🦁</span><div><h3 id="deputy-lanster-title">قسم لانستر</h3><p>LANSTER DIVISION</p></div><span class="deputy-count">02 نواب</span></div>
+              <div class="noble-carousel deputy-carousel" data-carousel="deputy-lanster" aria-label="معرض نواب قسم لانستر">
+                <div class="noble-track">
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="yutaDeputy"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/qLwswBbh/16170.jpg" alt="صورة yutaDeputy" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">🗡️</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>يوتا</h4><p class="noble-role">قسم لانستر 🦁</p><p class="noble-sector">يتابع مسؤولياته ضمن قسم لانستر.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                  <div class="noble-slide"><button type="button" class="noble-card deputy-noble-card profile-card" data-profile="oruma"><div class="deputy-art" style="--deputy-glow:#7c3655"><img class="deputy-portrait" src="https://i.ibb.co/MxQ8MmkX/16677.jpg" alt="صورة oruma" loading="lazy" onerror="this.style.display='none'"><span aria-hidden="true">⚜️</span></div><div class="noble-card-content"><span class="noble-rank">🛡️ نائب اللورد</span><h4>أورومـا</h4><p class="noble-role">قسم لانستر 🦁</p><p class="noble-sector">يساند قيادة القسم ويتابع مهامه التنظيمية.</p><span class="noble-tap">اضغط لعرض السيرة الذاتية ↗</span></div></button></div>
+                </div>
+                <div class="carousel-controls"><button class="carousel-arrow" type="button" data-prev aria-label="النائب السابق">›</button><div class="carousel-dots" data-dots></div><button class="carousel-arrow" type="button" data-next aria-label="النائب التالي">‹</button></div>
+                <p class="carousel-caption">اسحب للتنقل بين نواب لانستر</p>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -324,11 +460,11 @@
 
     <section id="guilds">
       <div class="container">
-        <div class="section-head"><div><div class="section-kicker">GUILDS & ADMIRALS</div><h2>النقابات <span class="gold">والأدميرالات</span></h2><p class="section-desc">سجل النقابات ا إلرسمية هذه فقط.</p></div></div>
+        <div class="section-head"><div><div class="section-kicker">GUILDS & ADMIRALS</div><h2>النقابات <span class="gold">والأدميرالات</span></h2><p class="section-desc">سجل النقابات المعتمد في هذه النسخة، مع أسماء الأدميرالات المتاحة والمقاعد الشاغرة.</p></div></div>
         <div class="panel">
           <div class="guild-tools">
             <input class="search" id="guildSearch" type="search" placeholder="ابحث عن نقابة أو أدميرال..." aria-label="البحث في النقابات">
-            <span class="guild-count" id="guildCounter">26 نقابة</span>
+            <span class="guild-count" id="guildCounter">27 نقابة</span>
           </div>
           <div class="guild-grid" id="guildGrid">
             <article class="guild-card"><div class="guild-name">شــادو🌑</div><div class="admiral">الأدميرال<b>فـايـولـيـت🌸</b></div></article>
@@ -357,6 +493,7 @@
             <article class="guild-card"><div class="guild-name">طـوكـيـو⛩️</div><div class="admiral">الأدميرال<b>غوجـو🕷️</b></div></article>
             <article class="guild-card"><div class="guild-name">فـورتـيـكـس🌪️</div><div class="admiral">الأدميرال<b>ويـلـيـام🪽</b></div></article>
             <article class="guild-card"><div class="guild-name">هـوستـيـل🕷️</div><div class="admiral">الأدميرال<b>ايـانـو🦅</b></div></article>
+               <article class="guild-card"><div class="guild-name">سـيـنا❄️</div><div class="admiral">الأدميرال<b>تـوجـي🦅</b></div></article>
           </div>
           <div class="empty" id="noGuilds" hidden>لا توجد نتائج مطابقة لبحثك.</div>
         </div>
@@ -365,7 +502,7 @@
 
     <section id="weekly">
       <div class="container">
-        <div class="section-head"><div><div class="section-kicker">WEEKLY ELITE</div><h2>نخبة <span class="gold">الأسبوع</span></h2><p class="section-desc">مساحة لتكريم أصحاب الحضور والإنجازات داخل المملكة. يمكن تحديث الأسماء من لوحة الإدارة التجريبية.</p></div></div>
+        <div class="section-head"><div><div class="section-kicker">WEEKLY ELITE</div><h2>نخبة <span class="gold">الأسبوع</span></h2><p class="section-desc">مساحة لتكريم أصحاب الحضور والإنجازات داخل المملكة .</p></div></div>
         <div class="honor-grid" id="weeklyGrid">
           <article class="honor-card"><span class="icon">⚓</span><h3>أفضل أدميرال</h3><p>صاحب التميّز في قيادة النقابة</p><strong data-weekly="admiral">لم يتم التحديد بعد</strong></article>
           <article class="honor-card"><span class="icon">♜</span><h3>أفضل دوق</h3><p>حضور ومسؤولية وتميّز</p><strong data-weekly="duke">لم يتم التحديد بعد</strong></article>
@@ -398,7 +535,7 @@
     <section class="admin-panel" id="adminPanel">
       <div class="container admin-box">
         <div class="admin-title"><h2>لوحة إدارة <span class="gold">إيليت</span></h2><button class="btn" id="closeAdmin">إغلاق اللوحة ✕</button></div>
-        <p class="admin-note">لوحة الادارة.</p>
+        <p class="admin-note">.</p>
         <form id="loginArea" class="panel">
           <p>أدخل كلمة مرور لوحة الإدارة للمتابعة.</p>
           <div class="field"><label for="adminPassword">كلمة المرور</label><input id="adminPassword" type="password" autocomplete="current-password" required placeholder="كلمة مرور الإدارة"></div>
@@ -438,8 +575,8 @@
             </div>
             <div class="form-card">
               <h3>ℹ️ معلومات اللوحة</h3>
-              <p style="color:var(--muted);font-size:13px">.</p>
-              <p class="fineprint">تنبيه أمني: </p>
+              <p style="color:var(--muted);font-size:13px".</p>
+              <p class="fineprint">ت.</p>
             </div>
           </div>
         </div>
@@ -452,7 +589,8 @@
     <div class="profile-modal">
       <div class="modal-head"><div><div class="section-kicker">ELITE PROFILE</div><h2 id="profileModalTitle">الملف الشخصي</h2><p id="profileModalRole" class="modal-muted"></p></div><button type="button" class="modal-close" id="closeProfileModal" aria-label="إغلاق">إغلاق ✕</button></div>
       <div id="profileModalImageWrap" style="display:none;margin-top:18px"><img id="profileModalImage" alt="صورة الشخصية" style="display:block;width:min(100%,320px);height:260px;object-fit:cover;border-radius:16px;border:1px solid var(--line);margin:auto"></div>
-      <div class="modal-section"><h3>النقابات التابعة والأدميرالات</h3><div class="modal-guilds" id="profileGuilds"></div><p class="image-url-note">.</p></div>
+      <div class="modal-section" id="profileBioSection"><h3>السيرة الذاتية</h3><p id="profileBio" class="modal-muted" style="font-size:14px;line-height:2"></p></div>
+      <div class="modal-section" id="profileGuildSection"><h3>النقابات التابعة والأدميرالات</h3><div class="modal-guilds" id="profileGuilds"></div></div>
     </div>
   </div>
 
@@ -463,12 +601,24 @@
     </div>
   </footer>
 
-  <a class="developer-float" href="https://wa.me/963992390740" target="_blank" rel="noopener noreferrer" aria-label="التواصل مع المطور عبر واتساب">𝑨𝑭 &lt;/&gt; المطور</a>
+  <a class="developer-float" href="https://wa.me/963993390740" target="_blank" rel="noopener noreferrer" aria-label="التواصل مع المطور عبر واتساب">𝑨𝑭 &lt;/&gt; المطور</a>
   <button class="admin-open" id="openAdmin" type="button">⚙ لوحة الإدارة</button>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="العودة إلى أعلى الصفحة" title="العودة إلى الأعلى">↑</button>
 
   <script>
     (() => {
       "use strict";
+      // طبقة جزيئات سينمائية خفيفة: جمر ذهبي وشرارات طاقة تتحرك بعمق.
+      const canvas = document.getElementById("emberCanvas");
+      if (canvas && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        const ctx = canvas.getContext("2d", { alpha: true });
+        let width = 0, height = 0, raf = 0, particles = [];
+        const mobile = window.matchMedia("(max-width: 700px)");
+        const makeParticle = (randomY = true) => ({ x: Math.random()*width, y: randomY?Math.random()*height:height+Math.random()*30, r:Math.random()*1.7+.35, speed:Math.random()*.48+.12, drift:(Math.random()-.5)*.32, alpha:Math.random()*.46+.12, phase:Math.random()*Math.PI*2, hue:Math.random()>.78?190+Math.random()*30:35+Math.random()*15 });
+        function resizeCanvas(){const dpr=Math.min(window.devicePixelRatio||1,1.6);width=window.innerWidth;height=window.innerHeight;canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);canvas.style.width=width+"px";canvas.style.height=height+"px";ctx.setTransform(dpr,0,0,dpr,0,0);const count=Math.min(mobile.matches?10:22,Math.round(width/(mobile.matches?42:58)));particles=Array.from({length:count},()=>makeParticle());}
+        let lastFrame=0;function draw(timestamp=0){if(timestamp-lastFrame<32){raf=requestAnimationFrame(draw);return;}lastFrame=timestamp;ctx.clearRect(0,0,width,height);for(const p of particles){p.y-=p.speed;p.x+=p.drift+Math.sin(p.phase+=.012)*.16;if(p.y<-10)Object.assign(p,makeParticle(false),{y:height+4});if(p.x<-8)p.x=width+8;if(p.x>width+8)p.x=-8;const pulse=.55+Math.sin(p.phase)*.35;ctx.beginPath();ctx.fillStyle=`hsla(${p.hue},90%,72%,${p.alpha*pulse})`;ctx.arc(p.x,p.y,p.r*pulse,0,Math.PI*2);ctx.fill();}raf=requestAnimationFrame(draw);}
+        resizeCanvas();draw();let resizeTimer;window.addEventListener("resize",()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(resizeCanvas,120);},{passive:true});document.addEventListener("visibilitychange",()=>{if(document.hidden){cancelAnimationFrame(raf);raf=0;}else if(!raf)draw();});
+      }
       const $ = (selector) => document.querySelector(selector);
       const ACHIEVEMENTS_KEY = "elite_kingdom_achievements_v1";
       const WEEKLY_KEY = "elite_kingdom_weekly_v1";
@@ -566,8 +716,52 @@
       }
       $("#year").textContent = new Date().getFullYear();
 
-      $("#navToggle").addEventListener("click", () => $("#navLinks").classList.toggle("open"));
-      $("#navLinks").querySelectorAll("a").forEach((link) => link.addEventListener("click", () => $("#navLinks").classList.remove("open")));
+      const navToggle = $("#navToggle");
+      const navLinks = $("#navLinks");
+      function closeMobileNav() {
+        navLinks.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "فتح القائمة");
+      }
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+        navToggle.setAttribute("aria-label", isOpen ? "إغلاق القائمة" : "فتح القائمة");
+      });
+      navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMobileNav));
+      document.addEventListener("click", (event) => {
+        if (navLinks.classList.contains("open") && !navLinks.contains(event.target) && !navToggle.contains(event.target)) closeMobileNav();
+      });
+
+      // شريط قراءة الصفحة وزر العودة للأعلى.
+      const progressBar = $("#scrollProgress");
+      const progressFill = $("#scrollProgressFill");
+      const backToTop = $("#backToTop");
+      let scrollQueued = false;
+      function updateScrollUI() {
+        const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        const percent = Math.min(100, Math.max(0, window.scrollY / maxScroll * 100));
+        progressFill.style.width = percent + "%";
+        progressBar.setAttribute("aria-valuenow", String(Math.round(percent)));
+        backToTop.classList.toggle("visible", window.scrollY > 520);
+        scrollQueued = false;
+      }
+      window.addEventListener("scroll", () => {
+        if (!scrollQueued) { scrollQueued = true; window.requestAnimationFrame(updateScrollUI); }
+      }, { passive: true });
+      window.addEventListener("resize", updateScrollUI, { passive: true });
+      backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }));
+      updateScrollUI();
+      // اختصار بحث سريع يسهل استخدام قائمة النقابات على الحاسوب والهاتف بلوحة مفاتيح.
+      document.addEventListener("keydown", (event) => {
+        const key = event.key.toLowerCase();
+        if ((event.ctrlKey || event.metaKey) && key === "k") {
+          event.preventDefault();
+          $("#guildSearch").focus();
+          $("#guildSearch").scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+        if (event.key === "Escape") closeMobileNav();
+      });
 
       $("#guildSearch").addEventListener("input", (event) => {
         const query = event.target.value.trim().toLocaleLowerCase("ar");
@@ -621,8 +815,14 @@
         nakime: "https://i.ibb.co/pvQmh6Rm/16169.jpg",
         aizen: "https://i.ibb.co/dwzSgC4V/16173.jpg",
         yuta: "https://i.ibb.co/qLwswBbh/16170.jpg",
+        yutaDeputy: "https://i.ibb.co/qLwswBbh/16170.jpg",
         goku: "https://i.ibb.co/Y7mQ4fss/16180.jpg",
-        zofan: "https://i.ibb.co/SCCkKN5/16174.jpg"
+        zofan: "https://i.ibb.co/SCCkKN5/16174.jpg",
+        obito: "https://i.ibb.co/WpxWnLmc/16674.jpg",
+        sabo: "https://i.ibb.co/rRVfcxLs/16675.jpg",
+        rukia: "https://i.ibb.co/Pv98H47c/16678.jpg",
+        edward: "https://static.wikia.nocookie.net/fma/images/1/15/Edward_Full_Body.png/revision/latest?cb=20250220121735",
+        oruma: "data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 500 700%22%3E%3Cdefs%3E%3CradialGradient id=%22g%22 cx=%2250%25%22 cy=%2230%25%22 r=%2270%25%22%3E%3Cstop stop-color=%22%236d4e8b%22/%3E%3Cstop offset=%221%22 stop-color=%22%2308090e%22/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width=%22500%22 height=%22700%22 fill=%22url(%23g)%22/%3E%3Cpath d=%22M95 700 L120 460 Q145 380 205 365 L210 285 L290 285 L295 365 Q355 380 380 460 L405 700Z%22 fill=%22%23101320%22 stroke=%22%23d8b66a%22 stroke-width=%226%22/%3E%3Cellipse cx=%22250%22 cy=%22220%22 rx=%2290%22 ry=%22120%22 fill=%22%23131522%22 stroke=%22%23d8b66a%22 stroke-width=%225%22/%3E%3Cpath d=%22M160 205 Q250 90 340 205 L315 250 L185 250Z%22 fill=%22%2306070b%22/%3E%3Cpath d=%22M190 230 L230 240 M270 240 L310 230%22 stroke=%22%23f4df9a%22 stroke-width=%227%22 stroke-linecap=%22round%22/%3E%3Cpath d=%22M215 290 L250 325 L285 290%22 fill=%22none%22 stroke=%22%23d8b66a%22 stroke-width=%225%22/%3E%3Cpath d=%22M125 450 L250 520 L375 450%22 fill=%22none%22 stroke=%22%236d4e8b%22 stroke-width=%2218%22/%3E%3C/svg%3E"
       };
       document.querySelectorAll("[data-rank-image]").forEach((img) => {
         const key = img.getAttribute("data-rank-image");
@@ -722,43 +922,38 @@
       // اربط أسماء النقابات بكل شخصية بعد تحديد التبعيات الصحيحة.
       // اكتب أسماء النقابات كما تظهر في قائمة النقابات، واسم الأدميرال كما هو.
       const PROFILE_DATA = {
-        daniel: { name: "دانيال", role: "إمبراطور إيليت", guilds: [] },
-        madara: { name: "مادارا", role: "نائب الإمبراطور", guilds: [] },
-        feitan: { name: "فيتان", role: "لورد المملكة", guilds: [] },
-        ashilad: { name: "اشيلاد", role: "لورد الفروع", guilds: [] },
-        zofan: { name: "زوفان", role: "أمير نيفريا", guilds: [
-          { name: "دريــفـت🎻", admiral: "ريـوزاكـي🍃" },
-          { name: "ثـرونـز🐉", admiral: "شاغر" },
-          { name: "فـيـنـيـكـس🐦‍🔥", admiral: "رايـلـي🌑" },
-          { name: "أيــلا 🌙", admiral: "نـافـيـا💫" },
-          { name: "طـوكـيـو⛩️", admiral: "غوجـو🕷️" }
+        daniel: { name: "دانيال", role: "إمبراطور إيليت", bio: "مؤسس العرش وقائد مملكة إيليت. يتولى رسم الرؤية العامة للمملكة، وحماية هويتها، وتوحيد القيادة تحت راية واحدة.", guilds: [] },
+        madara: { name: "مادارا", role: "نائب الإمبراطور", bio: "اليد اليمنى للإمبراطور وركن أساسي في مجلس العرش. يساند القيادة العليا في التخطيط، وحسم القرارات، والحفاظ على تماسك المملكة.", guilds: [] },
+        feitan: { name: "فيتان", role: "لورد المملكة", bio: "يتابع النظام الداخلي وشؤون المملكة، ويسهم في تنسيق المسؤوليات بين القيادة والإدارات لضمان سير العمل بانضباط.", guilds: [] },
+        ashilad: { name: "أشيلاد", role: "لورد الفروع", bio: "يشرف على الفروع وتوسّعها، ويتابع تنسيقها وربطها بإدارة المملكة للحفاظ على وحدة التنظيم وتطوره.", guilds: [] },
+        zofan: { name: "زوفان", role: "قائد إمارة نيفريا ❄️", bio: "قائد إمارة نيفريا، يتابع شؤون الإمارة ونقاباتها ويحافظ على التنسيق بين الأدميرالات وأفرادها.", guilds: [
+          { name: "دريــفـت🎻", admiral: "ريـوزاكـي🍃" }, { name: "ثـرونـز🐉", admiral: "شاغر" }, { name: "فـيـنـيـكـس🐦‍🔥", admiral: "رايـلـي🌑" }, { name: "أيــلا 🌙", admiral: "نـافـيـا💫" }, { name: "طـوكـيـو⛩️", admiral: "غوجـو🕷️" }
         ] },
-        goku: { name: "غوكو", role: "أمير الأكـاريـا", guilds: [
-          { name: "فـورتـيـكـس🌪️", admiral: "ويـلـيـام🪽" },
-          { name: "لـونـا🌕", admiral: "ارثـر⚔️" },
-          { name: "يـوجـيـن🏮", admiral: "شاغر" },
-          { name: "كـلارا☀️", admiral: "سـانجـي🌙" },
-          { name: "أكـومـو🎐", admiral: "مـاي" }
+        goku: { name: "غوكو", role: "قائد إمارة الأكـاريـا 🌕", bio: "قائد إمارة الأكـاريـا، يتولى متابعة شؤون الإمارة والنقابات التابعة له وتنسيق عملها. النقابات المعتمدة له هي لونا ويوجين وكلارا وأكومو فقط.", guilds: [
+          { name: "لـونـا🌕", admiral: "ارثـر⚔️" }, { name: "يـوجـيـن🏮", admiral: "شاغر" }, { name: "كـلارا☀️", admiral: "سـانجـي🌙" }, { name: "أكـومـو🎐", admiral: "مـاي" }
         ] },
-        aizen: { name: "أيزن", role: "دوق", guilds: [
-          { name: "أيــلا 🌙", admiral: "نـافـيـا💫" },
-          { name: "ڤـيـنـلانـد🍁", admiral: "غـوجـو🔥" },
-          { name: "سـتـارك🐺", admiral: "ديـكـو🦅" },
-          { name: "ايـنـرا 👑", admiral: "شاغر" }
+        aizen: { name: "أيزن", role: "الدوق الأول والمسؤول عن النقابات", bio: "الدوق الأول في مملكة إيليت والمسؤول عن متابعة النقابات المحددة ضمن نطاقه، وتنسيق شؤونها مع الأدميرالات.", guilds: [
+          { name: "ڤـيـنـلانـد🍁", admiral: "غـوجـو🔥" }, { name: "سـتـارك🐺", admiral: "ديـكـو🦅" }, { name: "ايـنـرا 👑", admiral: "شاغر" }
         ] },
-        nakime: { name: "ناكيمي", role: "دوق", guilds: [
-          { name: "ثـرونـز🐉", admiral: "شاغر" },
-          { name: "طـوكـيـو⛩️", admiral: "غوجـو🕷️" }
+        nakime: { name: "ناكيمي", role: "الدوقة الثانية", bio: "دوقة في مجلس النبلاء، تتابع النقابات المسندة إليها وتعمل على تنسيق شؤونها مع الأدميرالات.", guilds: [
+          { name: "ثـرونـز🐉", admiral: "شاغر" }, { name: "طـوكـيـو⛩️", admiral: "غوجـو🕷️" }
         ] },
-        yuta: { name: "يوتا", role: "دوق", guilds: [
-          { name: "شــادو🌑", admiral: "فـايـولـيـت🌸" },
-          { name: "ازوـرا🔥", admiral: "ميليوداس🍀" },
-          { name: "سـنـو☃️", admiral: "شاغر" }
-        ] }
+        yuta: { name: "يوتا", role: "الدوق الثالث — أزورا وشادو", bio: "دوق مسؤول عن نقابتي أزورا وشادو فقط، ويتابع شؤون النقابتين وتنسيق العمل مع الأدميرالات.", guilds: [
+          { name: "شــادو🌑", admiral: "فـايـولـيـت🌸" }, { name: "ازوـرا🔥", admiral: "ميليوداس🍀" }
+        ] },
+        obito: { name: "أوبيتو", role: "نائب اللورد — قسم شيرا 🐉", bio: "أحد نواب اللورد ضمن قسم شيرا. تُعرض هنا هويته التنظيمية ضمن القسم، ويمكن إضافة تفاصيل سيرته ومهامه الدقيقة عند اعتمادها.", guilds: [] },
+        sabo: { name: "سابو", role: "نائب اللورد — قسم شيرا 🐉", bio: "أحد نواب اللورد ضمن قسم شيرا. يَظهر في سجل القيادة الخاص بالقسم، مع إمكانية استكمال تفاصيل سيرته عند توفرها.", guilds: [] },
+        rukia: { name: "روكيا", role: "نائب اللورد — قسم شيزورا 🌑", bio: "إحدى نائبات اللورد ضمن قسم شيزورا. هذا الملف مخصص لتعريفها ومهامها داخل القسم.", guilds: [] },
+        edward: { name: "إدوارد", role: "نائب اللورد — قسم شيزورا 🌑", bio: "أحد نواب اللورد ضمن قسم شيزورا. يمكن استكمال سجل إنجازاته ومسؤولياته عند تحديد التفاصيل المعتمدة.", guilds: [] },
+        sasuke: { name: "ساسكي", role: "نائب اللورد — قسم شيزورا 🌑", bio: "نائب اللورد ضمن قسم شيزورا، وتُعرض صورته وملفه التعريفي ضمن سجل القيادة.", guilds: [] },
+        yutaDeputy: { name: "يوتا", role: "نائب اللورد — قسم لانستر 🦁", bio: "يظهر هنا بصفته نائبًا للورد ضمن قسم لانستر، وهذا ملف منفصل عن بطاقة الدوق يوتا الموجودة في قسم الدوقات.", guilds: [] },
+        oruma: { name: "أورومـا", role: "نائب اللورد — قسم لانستر 🦁", bio: "أحد نواب اللورد ضمن قسم لانستر. خُصص هذا الملف لعرض تعريفه التنظيمي، ويمكن إضافة تفاصيله المعتمدة لاحقًا.", guilds: [] }
       };
-      function openProfile(key) {
+      let lastProfileTrigger = null;
+      function openProfile(key, trigger = document.activeElement) {
         const profile = PROFILE_DATA[key];
         if (!profile) return;
+        lastProfileTrigger = trigger;
         $("#profileModalTitle").textContent = profile.name;
         $("#profileModalRole").textContent = profile.role;
         const modalImageWrap = $("#profileModalImageWrap");
@@ -772,23 +967,30 @@
           modalImage.removeAttribute("src");
           modalImageWrap.style.display = "none";
         }
+        $("#profileBio").textContent = profile.bio || "لا توجد سيرة ذاتية مضافة لهذه الشخصية بعد.";
         const guildTarget = $("#profileGuilds");
+        const guildSection = $("#profileGuildSection");
         if (!profile.guilds.length) {
-          guildTarget.innerHTML = '<div class="empty" style="grid-column:1/-1">لم تُحدّد النقابات التابعة لهذه الشخصية بعد.</div>';
+          guildSection.hidden = true;
+          guildTarget.innerHTML = "";
         } else {
+          guildSection.hidden = false;
           guildTarget.innerHTML = profile.guilds.map((guild) => `
             <div class="modal-guild"><strong>${safeText(guild.name)}</strong><span>الأدميرال: ${safeText(guild.admiral || "شاغر")}</span></div>
           `).join("");
         }
         $("#profileModal").classList.add("show");
         document.body.style.overflow = "hidden";
+        $("#closeProfileModal").focus();
       }
       document.querySelectorAll("[data-profile]").forEach((card) => {
-        card.addEventListener("click", () => openProfile(card.getAttribute("data-profile")));
+        card.addEventListener("click", () => openProfile(card.getAttribute("data-profile"), card));
       });
       function closeProfile() {
+        if (!$("#profileModal").classList.contains("show")) return;
         $("#profileModal").classList.remove("show");
         document.body.style.overflow = "";
+        if (lastProfileTrigger && typeof lastProfileTrigger.focus === "function") lastProfileTrigger.focus();
       }
       $("#closeProfileModal").addEventListener("click", closeProfile);
       $("#profileModal").addEventListener("click", (event) => {
@@ -862,7 +1064,7 @@
         document.body.appendChild(link);
         link.click();
         link.remove();
-        URL.revokeObjectURL(url);
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
         $("#backupStatus").textContent = "تم تجهيز ملف النسخة الاحتياطية.";
       });
 
